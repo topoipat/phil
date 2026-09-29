@@ -1,0 +1,226 @@
+cradle:
+  cabal:
+    - path: "./generated"
+      component: "phil-core:lib:architecture-revision-construction-kernel"
+
+    - path: "./src"
+      component: "lib:phil-core"
+
+    - path: "./app/Main.hs"
+      component: "phil-core:exe:phil-core"
+
+    - path: "./app/LLVMPhase0Main.hs"
+      component: "phil-core:exe:phil-llvm-phase0"
+
+    - path: "./app/LLVMRecognizedRecordMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-recognized-record"
+
+    - path: "./app/LLVMExactReceiveMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-exact-receive"
+
+    - path: "./app/LLVMDigestValidationMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-digest-validation"
+
+    - path: "./app/LLVMStorageMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-storage"
+
+    - path: "./app/LLVMAcceptedResponseMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-accepted-response"
+
+    - path: "./app/LLVMRejectedResponseMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-rejected-response"
+
+    - path: "./app/LLVMFinalResponseReceiveMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-final-response-receive"
+
+    - path: "./app/LLVMPayloadCancelChoiceMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-payload-cancel-choice"
+
+    - path: "./app/LLVMVersionSessionChoiceMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-version-session-choice"
+
+    - path: "./app/LLVMBeginPolicyChoiceMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-begin-policy-choice"
+
+    - path: "./app/LLVMHelloPolicyValidationMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-hello-policy-validation"
+
+    - path: "./app/LLVMExactSendMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-exact-send"
+
+    - path: "./app/LLVMClientControlSendMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-client-control-send"
+
+    - path: "./app/LLVMServerFramedIngressMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-server-framed-ingress"
+
+    - path: "./app/LLVMStorageFailureDetailMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-storage-failure-detail"
+
+    - path: "./app/LLVMControlCodecMain.hs"
+      component: "phil-core:exe:phil-llvm-phase0-control-codec"
+
+    - path: "./app/PhilcMain.hs"
+      component: "phil-core:exe:philc"
+
+    - path: "./app/RocqScalarCertificationMain.hs"
+      component: "phil-core:exe:phil-certify-core-scalar"
+
+    - path: "./app/RecognizedRecordProofCertificationMain.hs"
+      component: "phil-core:exe:phil-certify-recognized-record"
+
+    - path: "./app/ExactReceiveProofCertificationMain.hs"
+      component: "phil-core:exe:phil-certify-exact-receive"
+
+    - path: "./app/DigestValidationProofCertificationMain.hs"
+      component: "phil-core:exe:phil-certify-digest-validation"
+
+    - path: "./app/StorageProofCertificationMain.hs"
+      component: "phil-core:exe:phil-certify-storage"
+
+    - path: "./test"
+      component: "phil-core:test:phil-core-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-process-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-process-integration-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-recognition-ingress-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-recognition-evidence-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-recognition-integration-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-value-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-refinement-evidence-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-sort-check-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-focusing-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-decision-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-discharge-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-surface-parser-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-surface-elaboration-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-surface-conformance-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-assurance-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-assurance-handoff-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-rocq-certification-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-systems-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-llvm-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-recognized-record-abi-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-digest-validation-abi-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-storage-abi-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-accepted-response-abi-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-rejected-response-abi-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-session-choice-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-payload-cancel-choice-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-local-runtime-choice-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-version-session-choice-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-version-session-choice-abi-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-payload-cancel-choice-abi-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-final-response-receive-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-runnable-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-begin-policy-session-choice-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-begin-policy-choice-abi-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-hello-policy-validation-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-client-outbound-semantics-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-recognition-failure-detail-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-storage-failure-detail-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-client-control-send-abi-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-server-framed-ingress-abi-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-storage-failure-detail-abi-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-control-codec-abi-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-hello-policy-validation-abi-tests"
+
+    - path: "./test"
+      component: "phil-core:test:phil-exact-send-abi-tests"
+
+    - path: "phase0-projection/src"
+      component: "lib:phil-phase0-projection"
+
+    - path: "phase0-projection/app/Main.hs"
+      component: "phil-phase0-projection:exe:phil-phase0-upload-projection"
+
+    - path: "phase0-projection/app/LLVMMain.hs"
+      component: "phil-phase0-projection:exe:phil-phase0-upload-llvm"
+
+    - path: "phase0-projection/test"
+      component: "phil-phase0-projection:test:projection-tests"
